@@ -1,0 +1,13 @@
+{
+	"name": "PrettyLook",
+	"description": "Hides noise of Outlook",
+	"version": "1.0",
+	"manifest_version": 3,
+	"content_scripts": [
+		{
+			"matches": ["https://outlook.live.com/**"],
+			"run_at": "document_start",
+			"css": ["main.css"]
+		}
+	]
+}
